@@ -1,21 +1,34 @@
-# detecte_cheque
-Overview
-This project introduces a robust system for analyzing and interpreting handwritten dates and amounts on cheques. Utilizing a blend of machine learning techniques, the system leverages both supervised and unsupervised learning, trained on the MNIST dataset, to achieve accurate recognition of handwritten characters.
+Handwritten Cheque Analyzer
+Description
+This Handwritten Cheque Analyzer is a collaborative project developed at the University of Grenoble, leveraging advanced machine learning techniques to interpret handwritten dates and amounts on cheques. Utilizing both supervised and unsupervised learning methods trained on the MNIST dataset, this tool aims to automate and streamline the process of cheque processing in financial institutions.
 
 Features
-Handwritten date and amount recognition on cheques.
-Integration of supervised and unsupervised machine learning methods.
-Utilization of the MNIST dataset for training the recognition model.
-Application of image processing techniques for enhancing character recognition accuracy.
-Files
-main.py: The main script that orchestrates the model training, image processing, and prediction tasks.
-detecte_cheque.py: Contains the core functionality for cheque image processing, character segmentation, and machine learning model interaction.
-How It Works
-Image Processing: Cheque images are processed to identify and segment the date and amount sections.
-Character Recognition: Each character is analyzed using a model trained on the MNIST dataset, employing both supervised and unsupervised learning techniques.
-Prediction: The system combines the recognized characters to output the final interpreted date and amount.
+Handwritten Text Recognition: Utilizes machine learning algorithms to accurately read handwritten dates and amounts from cheques.
+Advanced Image Processing: Employs techniques like Histogram of Oriented Gradients (HOG) for image feature extraction.
+Robust Machine Learning Integration: Combines various machine learning models, including neural networks and k-nearest neighbors, for effective learning and prediction.
+MNIST Dataset Training: Leverages the MNIST dataset to enhance the model's accuracy and reliability in recognizing handwritten characters.
+Installation
+To run this project, ensure you have Python installed and then install the necessary dependencies:
+
+pip install numpy matplotlib scikit-image scikit-learn
+
 Usage
-To use this project, run main.py with Python 3. Ensure you have the necessary dependencies installed, including [list any specific libraries used, like NumPy, scikit-learn, etc.].
+Once the dependencies are installed, execute the main script from the terminal:
+
+bash
+Copy code
+python main.py <input_cheque_image_path>
+Replace <input_cheque_image_path> with the path to the cheque image you want to analyze.
 
 Contributing
-Contributions to this project are welcome. Please feel free to fork the repository, make your changes, and submit a pull request.
+This project was developed as part of a university course and is not currently open for external contributions.
+
+License
+Specify the license under which the project is released. This will define how others can use, modify, and share your project.
+
+Authors
+Abdolmotallebi
+feizabadi
+
+Acknowledgments
+Special thanks to the faculty and peers at the University of Grenoble who provided insights and feedback during the development of this project.
